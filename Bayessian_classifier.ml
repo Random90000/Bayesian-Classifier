@@ -72,8 +72,9 @@ let print_classify smooth known_files new_file =
 	let (i,_,_) = list_max estimated_prob in
 	Format.printf "The most likely source is %s\n" (List.nth known_files i)
 ;;
-(*Можно читать данные о частотности слов из баз*)
+(*Можно читать данные о частотности слов из баз
 print_classify 1. ["base_1.ml"; "base_2.ml"] "new_text.ml";;
+*)
 
 (*.. или сразу считать в тексте *)
 print_classify 1. ["autor_1.ml"; "autor_2.ml"] "new_text.ml";; 
